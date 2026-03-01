@@ -1,9 +1,9 @@
 {
     "name": "hexlet/code",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "bin": [
         "bin/brain-games"
@@ -14,5 +14,7 @@
             "email": "adskidkikms@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "wp-cli/php-cli-tools": "^0.12.7"
+    }
 }
