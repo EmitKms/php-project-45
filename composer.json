@@ -1,19 +1,21 @@
 {
     "name": "hexlet/code",
-    "autoload": {
-        "files": [
-            "src/Cli.php"
-        ]
-    },
-    "bin": [
-        "bin/brain-games"
-    ],
     "authors": [
         {
             "name": "emit27",
             "email": "adskidkikms@gmail.com"
         }
     ],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
+    "autoload": {
+        "files": [
+            "src/Cli.php",
+            "src/Even.php"
+        ]
+    },
     "require": {
         "wp-cli/php-cli-tools": "^0.12.7"
     },

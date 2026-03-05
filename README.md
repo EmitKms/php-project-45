@@ -10,3 +10,17 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=EmitKms_php-project-45&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=EmitKms_php-project-45)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=EmitKms_php-project-45&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=EmitKms_php-project-45)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=EmitKms_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=EmitKms_php-project-45)
+
+# Команда для запуска игры
+
+make brain-even
+
+# Определить четные числа
+
+Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное
+
+[![asciicast](https://media.proglib.io/wp-uploads/2018/07/asciinema.png)](https://asciinema.org/a/SNzGfFDqbM7dfXCp)
+
+неправльный ответ
+
+[![asciicast](https://media.proglib.io/wp-uploads/2018/07/asciinema.png)](https://asciinema.org/a/A6mXpAG1jKifrs83)
