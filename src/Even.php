@@ -21,7 +21,7 @@ function runGameBrainEven()
     print_r("Answer 'yes' if the number is even, otherwise answer 'no'.\n");
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
-        $questionGame = rand(MIN_RAND, MAX_RAND);
+        $questionGame = random_int(MIN_RAND, MAX_RAND);
         $correctAnswer = isEven($questionGame) ? 'yes' : 'no';
         $gameData[] = [$questionGame, $correctAnswer];
     }
