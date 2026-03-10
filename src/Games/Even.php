@@ -16,7 +16,7 @@ function isEven(int $number)
 
 function runGameBrainEven()
 {
-    $gameDescription = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    $gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $questionGame = random_int(MIN_RAND, MAX_RAND);

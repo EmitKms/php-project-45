@@ -62,22 +62,32 @@ $ make brain-prime
 ## Пример работы игр:
 
 
-Игра определение четного числа. Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное
+Игра определение четного числа. Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/GFdkSlluPE2KdU0F.svg)](https://asciinema.org/a/GFdkSlluPE2KdU0F)
+[![asciicast](https://asciinema.org/a/uP5FkvQBTc2sfDgw.svg)](https://asciinema.org/a/uP5FkvQBTc2sfDgw)
 
 Неправльный ответ
 
-[![asciicast](https://asciinema.org/a/nYUApXv0FGcXjA8Y.svg)](https://asciinema.org/a/nYUApXv0FGcXjA8Y)
+[![asciicast](https://asciinema.org/a/uP5FkvQBTc2sfDgw.svg)](https://asciinema.org/a/uP5FkvQBTc2sfDgw)
 
  Игра Калькулятор. Арифметические выражения, которые необходимо вычислить. Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/LpKWMHKFYdRZqype.svg)](https://asciinema.org/a/LpKWMHKFYdRZqype)
+[![asciicast](https://asciinema.org/a/NXZLbMBj1uJp9XEN.svg)](https://asciinema.org/a/NXZLbMBj1uJp9XEN)
 
 Неправильный ответ
 
-[![asciicast](https://asciinema.org/a/uIC0U2IsO3Cglmpc.svg)](https://asciinema.org/a/uIC0U2IsO3Cglmpc)
+[![asciicast](https://asciinema.org/a/5QSUTIKd1LYs2vi1.svg)](https://asciinema.org/a/5QSUTIKd1LYs2vi1)
+
+Игра наибольший общий делитель (НОД). Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+Правильный ответ
+
+[![asciicast](https://asciinema.org/a/zeBNsYduP4lsfmS7.svg)](https://asciinema.org/a/zeBNsYduP4lsfmS7)
+
+Неправильный ответ
+
+[![asciicast](https://asciinema.org/a/dMtosUkLWFn4AGJK.svg)](https://asciinema.org/a/dMtosUkLWFn4AGJK)
