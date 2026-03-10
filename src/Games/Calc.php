@@ -13,12 +13,14 @@ const ARRAY_OPERATION_SELECTION = 2;
 function runGameBrainCalc()
 {
     $gameDescription = "What is the result of the expression?";
+    $operations = ['*', '+', '-'];
     $gameData = [];
+
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $numberRandFirst = random_int(MIN_RAND, MAX_RAND);
         $numberRandSecond = random_int(MIN_RAND, MAX_RAND);
-        $operations = ['*', '+', '-'];
-        $operation = $operations[random_int(0, ARRAY_OPERATION_SELECTION)];
+        $operation = $operations[array_rand($operations)];
+
         $result = match ($operation) {
             '*' => $numberRandFirst * $numberRandSecond,
             '+' => $numberRandFirst + $numberRandSecond,

@@ -11,16 +11,73 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=EmitKms_php-project-45&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=EmitKms_php-project-45)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=EmitKms_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=EmitKms_php-project-45)
 
-# Команда для запуска игры
+## Описание:
 
-make brain-even
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
-# Определить четные числа
+## Игры:
 
-Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное
+1. Определение четного числа.<br>
+2. Калькулятор. Арифметические выражения, которые необходимо вычислить.<br>
+3. Определение наибольшего общего делителя.<br>
+4. Прогрессия. Поиск пропущенных чисел в последовательности чисел.<br>
+5. Определение простого числа.<br>
 
-[![asciicast](https://media.proglib.io/wp-uploads/2018/07/asciinema.png)](https://asciinema.org/a/SNzGfFDqbM7dfXCp)
+## Требования к игре:
 
-неправльный ответ
+* Ubuntu Linux (https://ubuntu.com/)
+* PHP версии 8 и выше (https://www.php.net/downloads.php)
+* Composer (https://getcomposer.org/download/)
+* Утилита Make
+```sh
+$ sudo apt update
+$ sudo apt install make
+```
 
-[![asciicast](https://media.proglib.io/wp-uploads/2018/07/asciinema.png)](https://asciinema.org/a/A6mXpAG1jKifrs83)
+
+## Установка:
+
+```sh
+$ git clone git@github.com:EmitKms/php-project-45.git
+
+$ cd php-project-45
+
+$ make install
+```
+
+## Запуск игр:
+
+```sh
+$ make brain-even
+
+$ make brain-calc
+
+$ make brain-gcd
+
+$ make brain-progression
+
+$ make brain-prime
+```
+
+## Пример работы игр:
+
+
+Игра определение четного числа. Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное
+
+Правильный ответ
+
+[![asciicast](https://asciinema.org/a/GFdkSlluPE2KdU0F.svg)](https://asciinema.org/a/GFdkSlluPE2KdU0F)
+
+Неправльный ответ
+
+[![asciicast](https://asciinema.org/a/nYUApXv0FGcXjA8Y.svg)](https://asciinema.org/a/nYUApXv0FGcXjA8Y)
+
+ Игра Калькулятор. Арифметические выражения, которые необходимо вычислить. Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+
+Правильный ответ
+
+[![asciicast](https://asciinema.org/a/LpKWMHKFYdRZqype.svg)](https://asciinema.org/a/LpKWMHKFYdRZqype)
+
+Неправильный ответ
+
+[![asciicast](https://asciinema.org/a/uIC0U2IsO3Cglmpc.svg)](https://asciinema.org/a/uIC0U2IsO3Cglmpc)

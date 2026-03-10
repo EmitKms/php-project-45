@@ -7,7 +7,7 @@ use function Cli\Prompt;
 
 const QUESTIONS_COUNT = 3;
 
-function engineGameLaunch(array $gameData, $gameDescription)
+function engineGameLaunch(array $gameData, string $gameDescription)
 {
     line('Welcome to the Brain Games!');
     line("{$gameDescription}\n");
