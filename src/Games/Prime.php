@@ -9,7 +9,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 const MIN_RAND = -100;
 const MAX_RAND = 100;
 
-function isPrime(int $number): false|true
+function isPrime(int $number): bool
 {
     if ($number <= 1) {
         return false;
