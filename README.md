@@ -66,41 +66,41 @@ $ make brain-prime
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/uP5FkvQBTc2sfDgw.svg)](https://asciinema.org/a/uP5FkvQBTc2sfDgw)
+[![asciicast](https://asciinema.org/a/3kBjsbPkVin60w2V.svg)](https://asciinema.org/a/3kBjsbPkVin60w2V)
 
 Неправльный ответ
 
-[![asciicast](https://asciinema.org/a/uP5FkvQBTc2sfDgw.svg)](https://asciinema.org/a/uP5FkvQBTc2sfDgw)
+[![asciicast](https://asciinema.org/a/22yFeFy6jfy2NuX7.svg)](https://asciinema.org/a/22yFeFy6jfy2NuX7)
 
 Игра Калькулятор. Игроку показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/NXZLbMBj1uJp9XEN.svg)](https://asciinema.org/a/NXZLbMBj1uJp9XEN)
+[![asciicast](https://asciinema.org/a/NHfpuD7ppbz7PUr7.svg)](https://asciinema.org/a/NHfpuD7ppbz7PUr7)
 
 Неправильный ответ
 
-[![asciicast](https://asciinema.org/a/5QSUTIKd1LYs2vi1.svg)](https://asciinema.org/a/5QSUTIKd1LYs2vi1)
+[![asciicast](https://asciinema.org/a/f3yvcLCUXz2La89Z.svg)](https://asciinema.org/a/f3yvcLCUXz2La89Z)
 
 Игра наибольший общий делитель (НОД). Игроку показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/zeBNsYduP4lsfmS7.svg)](https://asciinema.org/a/zeBNsYduP4lsfmS7)
+[![asciicast](https://asciinema.org/a/66c7KMMNMHuTtKrG.svg)](https://asciinema.org/a/66c7KMMNMHuTtKrG)
 
 Неправильный ответ
 
-[![asciicast](https://asciinema.org/a/dMtosUkLWFn4AGJK.svg)](https://asciinema.org/a/dMtosUkLWFn4AGJK)
+[![asciicast](https://asciinema.org/a/1aeHd7J3UrCl2RAB.svg)](https://asciinema.org/a/1aeHd7J3UrCl2RAB)
 
 Игра "Арифметичекая прогрессия". Игроку показывается ряд чисел, образующий арифметическую прогрессию, в прогрессии есть промежуток выделенный двумя точками. Игрок должен определить в этом промежутке число.
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/BaeToffoVX1xalVi.svg)](https://asciinema.org/a/BaeToffoVX1xalVi)
+[![asciicast](https://asciinema.org/a/NRFZcP6KNGQYile5.svg)](https://asciinema.org/a/NRFZcP6KNGQYile5)
 
 Неправильный ответ
 
-[![asciicast](https://asciinema.org/a/KjF4cwrfGC3aMWsa.svg)](https://asciinema.org/a/KjF4cwrfGC3aMWsa)
+[![asciicast](https://asciinema.org/a/gLXCgK0kNL9wCHnY.svg)](https://asciinema.org/a/gLXCgK0kNL9wCHnY)
 
 
 Игра "Простое ли число?". Игрок выпадает число нужно определить простое число или оно составное?
@@ -108,8 +108,8 @@ $ make brain-prime
 
 Правильный ответ
 
-[![asciicast](https://asciinema.org/a/ivcULkG5IuwoaP6a.svg)](https://asciinema.org/a/ivcULkG5IuwoaP6a)
+[![asciicast](https://asciinema.org/a/V1DuBb4uVPaSqVG2.svg)](https://asciinema.org/a/V1DuBb4uVPaSqVG2)
 
 Неправильный ответ
 
-[![asciicast](https://asciinema.org/a/jimEHnadLKWq4sUp.svg)](https://asciinema.org/a/jimEHnadLKWq4sUp)
+[![asciicast](https://asciinema.org/a/Nak3S7p3Uk2m8Io5.svg)](https://asciinema.org/a/Nak3S7p3Uk2m8Io5)
