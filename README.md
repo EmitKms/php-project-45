@@ -101,3 +101,14 @@ $ make brain-prime
 Неправильный ответ
 
 [![asciicast](https://asciinema.org/a/KjF4cwrfGC3aMWsa.svg)](https://asciinema.org/a/KjF4cwrfGC3aMWsa)
+
+
+Игра "Простое ли число?". Игрок выпадает число нужно определить простое число или оно составное?
+
+Правильный ответ
+
+[![asciicast](https://asciinema.org/a/ivcULkG5IuwoaP6a.svg)](https://asciinema.org/a/ivcULkG5IuwoaP6a)
+
+Неправильный ответ
+
+[![asciicast](https://asciinema.org/a/jimEHnadLKWq4sUp.svg)](https://asciinema.org/a/jimEHnadLKWq4sUp)
