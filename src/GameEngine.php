@@ -2,8 +2,8 @@
 
 namespace BrainGames\GameEngine;
 
-use function Cli\Line;
-use function Cli\Prompt;
+use function cli\line;
+use function cli\prompt;
 
 const QUESTIONS_COUNT = 3;
 
