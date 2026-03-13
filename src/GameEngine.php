@@ -9,7 +9,7 @@ const QUESTIONS_COUNT = 3;
 
 function engineGameLaunch(array $gameData, string $gameDescription)
 {
-    line('Welcome to the Brain Games!');
+    line('Welcome to the Brain Game!');
     $playerName = prompt('May I have your name? ');
     line("Hello, {$playerName}!\n");
     line("{$gameDescription}\n");
