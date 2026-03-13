@@ -9,7 +9,8 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 const MIN_RAND = 1;
 const MAX_RAND = 99;
 
-function isEven(int $number)
+
+function isEven(int $number): bool
 {
     return $number % 2 === 0;
 }

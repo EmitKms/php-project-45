@@ -9,7 +9,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 const MIN_RAND = 10;
 const MAX_RAND = 90;
 
-function calculateDivisorGcd($a, $b)
+function calculateDivisorGcd(int $a, int $b)
 {
     if ($b === 0) {
         return $a;
