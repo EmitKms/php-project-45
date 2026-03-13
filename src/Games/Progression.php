@@ -32,7 +32,7 @@ function createProgression(int $startOfProgression, int $step): array
     return range($startOfProgression, $startOfProgression + $step * ($maxProgressionLenght), $step);
 }
 
-function runGameBrainProgression()
+function runGameBrainProgression(): void
 {
     $gameDescription = "What number is missing in the progression?";
     $gameData = [];

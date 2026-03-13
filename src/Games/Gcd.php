@@ -9,7 +9,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 const MIN_RAND = 10;
 const MAX_RAND = 90;
 
-function calculateDivisorGcd(int $a, int $b)
+function calculateDivisorGcd(int $a, int $b): int
 {
     if ($b === 0) {
         return $a;
@@ -17,7 +17,7 @@ function calculateDivisorGcd(int $a, int $b)
     return calculateDivisorGcd($b, $a % $b);
 }
 
-function runGameBrainGcd()
+function runGameBrainGcd(): void
 {
     $gameDescription = "Find the greatest common divisor of given numbers.";
     $gameData = [];

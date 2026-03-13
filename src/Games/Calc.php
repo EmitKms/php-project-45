@@ -10,7 +10,7 @@ const MIN_RAND = 1;
 const MAX_RAND = 50;
 const ARRAY_OPERATION_SELECTION = 2;
 
-function runGameBrainCalc()
+function runGameBrainCalc(): void
 {
     $gameDescription = "What is the result of the expression?";
     $operations = ['*', '+', '-'];

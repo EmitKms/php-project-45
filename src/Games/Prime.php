@@ -9,7 +9,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 const MIN_RAND = -100;
 const MAX_RAND = 100;
 
-function isPrime(int $number)
+function isPrime(int $number): false|true
 {
     if ($number <= 1) {
         return false;
@@ -22,7 +22,7 @@ function isPrime(int $number)
     return true;
 }
 
-function runGameBrainPrime()
+function runGameBrainPrime(): void
 {
     $gameData = [];
     $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';

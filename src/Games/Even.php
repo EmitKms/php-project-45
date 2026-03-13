@@ -15,7 +15,7 @@ function isEven(int $number): bool
     return $number % 2 === 0;
 }
 
-function runGameBrainEven()
+function runGameBrainEven(): void
 {
     $gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
     $gameData = [];
