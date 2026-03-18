@@ -9,7 +9,7 @@ use function cli\prompt;
 
 function run(): string
 {
-    $messages = require __DIR__ . '/../config/messages.php';
+    $messages = require_once __DIR__ . '/../config/messages.php';
 
     line($messages['welcome']);
     $name = prompt($messages['ask_name']);
