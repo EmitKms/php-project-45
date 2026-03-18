@@ -22,7 +22,6 @@ function runGameBrainGcd(): void
 {
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
-
         $numberRandFirst = random_int(MIN_RAND, MAX_RAND);
         $numberRandSecond = random_int(MIN_RAND, MAX_RAND);
 
