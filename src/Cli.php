@@ -7,11 +7,11 @@ use function cli\prompt;
 
 
 
-function run(): string
+function run(string $messageEndingWithS = 'welcomes'): string
 {
-    $messages = require_once __DIR__ . '/../config/messages.php';
+    $messages = require __DIR__ . '/../config/messages.php';
 
-    line($messages['welcome']);
+    line($messages[$messageEndingWithS]);
     $name = prompt($messages['ask_name']);
     line(sprintf($messages['hello'], $name));
 

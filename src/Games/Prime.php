@@ -26,6 +26,7 @@ function isPrime(int $number): bool
 function runGameBrainPrime(): void
 {
     $gameData = [];
+
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $primeNumber = random_int(MIN_RAND, MAX_RAND);
         $correctAnswer = isPrime($primeNumber) ? 'yes' : 'no';

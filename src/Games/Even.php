@@ -21,7 +21,9 @@ function runGameBrainEven(): void
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $questionGame = random_int(MIN_RAND, MAX_RAND);
+
         $correctAnswer = isEven($questionGame) ? 'yes' : 'no';
+
         $gameData[] = [$questionGame, $correctAnswer];
     }
     start($gameData, GAME_DESCRIPTION);

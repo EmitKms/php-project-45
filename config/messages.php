@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'welcome' => 'Welcome to the Brain Games!',
+    'welcome' => 'Welcome to the Brain Game!',
+    'welcomes' => 'Welcome to the Brain Games!',
     'ask_name' => 'May I have your name?',
     'hello' => 'Hello, %s!',
     'question' => 'Question: %s',

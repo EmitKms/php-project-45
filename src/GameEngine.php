@@ -10,9 +10,9 @@ const QUESTIONS_COUNT = 3;
 
 function engineGameLaunch(array $gameData, string $gameDescription): void
 {
-    $messages = require_once __DIR__ . '/../config/messages.php';
+    $messages = require __DIR__ . '/../config/messages.php';
 
-    $playerName = run();
+    $playerName = run('welcome');
 
     line("{$gameDescription}");
 
