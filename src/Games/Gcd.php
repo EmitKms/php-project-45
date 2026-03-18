@@ -8,6 +8,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 
 const MIN_RAND = 10;
 const MAX_RAND = 90;
+const GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
 function calculateDivisorGcd(int $a, int $b): int
 {
@@ -19,7 +20,6 @@ function calculateDivisorGcd(int $a, int $b): int
 
 function runGameBrainGcd(): void
 {
-    $gameDescription = "Find the greatest common divisor of given numbers.";
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $numberRandFirst = random_int(MIN_RAND, MAX_RAND);
@@ -28,5 +28,5 @@ function runGameBrainGcd(): void
         $question = "{$numberRandFirst} {$numberRandSecond}";
         $gameData[] = [$question, $correctAnswer];
     }
-    start($gameData, $gameDescription);
+    start($gameData, GAME_DESCRIPTION);
 }

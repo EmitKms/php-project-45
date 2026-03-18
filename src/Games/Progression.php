@@ -12,6 +12,7 @@ const MIN_LENGTH = 5;
 const MAX_LENGTH = 10;
 const MIN_STEP = 3;
 const MAX_STEP = 8;
+const GAME_DESCRIPTION = "What number is missing in the progression?";
 
 function passProgressionResponse(): array
 {
@@ -34,10 +35,9 @@ function createProgression(int $startOfProgression, int $step): array
 
 function runGameBrainProgression(): void
 {
-    $gameDescription = "What number is missing in the progression?";
     $gameData = [];
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $gameData[] = passProgressionResponse();
     }
-    start($gameData, $gameDescription);
+    start($gameData, GAME_DESCRIPTION);
 }

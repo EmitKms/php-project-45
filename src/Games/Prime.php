@@ -8,6 +8,7 @@ use const BrainGames\GameEngine\QUESTIONS_COUNT;
 
 const MIN_RAND = -100;
 const MAX_RAND = 100;
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $number): bool
 {
@@ -25,11 +26,10 @@ function isPrime(int $number): bool
 function runGameBrainPrime(): void
 {
     $gameData = [];
-    $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $primeNumber = random_int(MIN_RAND, MAX_RAND);
         $correctAnswer = isPrime($primeNumber) ? 'yes' : 'no';
         $gameData[] = [$primeNumber, $correctAnswer];
     }
-    start($gameData, $gameDescription);
+    start($gameData, GAME_DESCRIPTION);
 }
