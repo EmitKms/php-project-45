@@ -26,7 +26,8 @@
             "src/Games/Gcd.php",
             "src/Games/Progression.php",
             "src/Games/Prime.php",
-            "Config/Messages.php"
+            "Config/Messages.php",
+            "Config/Gamedescription.php"
         ]
     },
     "require": {

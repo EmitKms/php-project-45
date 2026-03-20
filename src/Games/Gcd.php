@@ -3,12 +3,11 @@
 namespace BrainGames\Games\Gcd;
 
 use function BrainGames\GameEngine\engineGameLaunch as start;
-
-use const BrainGames\GameEngine\QUESTIONS_COUNT;
+use function Config\Gamedescription\gameDesc;
 
 const MIN_RAND = 10;
 const MAX_RAND = 90;
-const GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
+
 
 function calculateDivisorGcd(int $a, int $b): int
 {
@@ -20,14 +19,15 @@ function calculateDivisorGcd(int $a, int $b): int
 
 function runGameBrainGcd(): void
 {
-    $gameData = [];
-    for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
+    $generateRound = function (): array {
+
         $numberRandFirst = random_int(MIN_RAND, MAX_RAND);
         $numberRandSecond = random_int(MIN_RAND, MAX_RAND);
 
         $correctAnswer = calculateDivisorGcd($numberRandFirst, $numberRandSecond);
         $question = "{$numberRandFirst} {$numberRandSecond}";
-        $gameData[] = [$question, $correctAnswer];
-    }
-    start($gameData, GAME_DESCRIPTION);
+
+        return [$question, $correctAnswer];
+    };
+    start($generateRound, gameDesc('brain-gcd'));
 }

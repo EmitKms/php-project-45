@@ -3,12 +3,10 @@
 namespace BrainGames\Games\Prime;
 
 use function BrainGames\GameEngine\engineGameLaunch as start;
-
-use const BrainGames\GameEngine\QUESTIONS_COUNT;
+use function Config\Gamedescription\gameDesc;
 
 const MIN_RAND = -100;
 const MAX_RAND = 100;
-const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $number): bool
 {
@@ -25,12 +23,13 @@ function isPrime(int $number): bool
 
 function runGameBrainPrime(): void
 {
-    $gameData = [];
+    $generateRound = function (): array {
 
-    for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         $primeNumber = random_int(MIN_RAND, MAX_RAND);
+
         $correctAnswer = isPrime($primeNumber) ? 'yes' : 'no';
-        $gameData[] = [$primeNumber, $correctAnswer];
-    }
-    start($gameData, GAME_DESCRIPTION);
+
+        return [$primeNumber, $correctAnswer];
+    };
+    start($generateRound, gameDesc('brain-prime'));
 }

@@ -9,14 +9,15 @@ use function Config\Messages\message;
 
 const QUESTIONS_COUNT = 3;
 
-function engineGameLaunch(array $gameData, string $gameDescription): void
+function engineGameLaunch(callable $generateRound, string $gameDescription): void
 {
 
     $playerName = run('welcome');
 
     line("{$gameDescription}");
 
-    foreach ($gameData as [$question, $correctAnswer]) {
+    for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
+        [$question, $correctAnswer] = $generateRound();
         line(message('question'), $question);
         $userAnswer = prompt(message('your_answer'));
         if ((string) $correctAnswer === $userAnswer) {
