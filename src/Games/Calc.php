@@ -22,7 +22,7 @@ function runGameBrainCalc(): void
         $numberRandFirst = random_int(MIN_RAND, MAX_RAND);
         $numberRandSecond = random_int(MIN_RAND, MAX_RAND);
 
-        $operation = $operations[rand(0, count($operations) - 1)];
+        $operation = $operations[random_int(0, count($operations) - 1)];
 
         $result = match ($operation) {
             OPERATION_MUL => $numberRandFirst * $numberRandSecond,
