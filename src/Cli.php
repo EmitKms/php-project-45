@@ -4,14 +4,13 @@ namespace BrainGames\Cli;
 
 use function cli\line;
 use function cli\prompt;
+use function Config\Messages\message;
 
-function run(string $messageEndingWithS = 'welcomes'): string
+function run(string $plural = 'welcomes'): string
 {
-    $messages = require __DIR__ . '/../config/messages.php';
-
-    line($messages[$messageEndingWithS]);
-    $name = prompt($messages['ask_name']);
-    line(sprintf($messages['hello'], $name));
+    line(message($plural));
+    $name = prompt(message('ask_name'));
+    line(sprintf(message('hello'), $name));
 
     return $name;
 }

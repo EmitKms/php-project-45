@@ -5,27 +5,27 @@ namespace BrainGames\GameEngine;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Cli\run;
+use function Config\Messages\message;
 
 const QUESTIONS_COUNT = 3;
 
 function engineGameLaunch(array $gameData, string $gameDescription): void
 {
-    $messages = require __DIR__ . '/../config/messages.php';
 
     $playerName = run('welcome');
 
     line("{$gameDescription}");
 
     foreach ($gameData as [$question, $correctAnswer]) {
-        line($messages['question'], $question);
-        $userAnswer = prompt($messages['your_answer']);
+        line(message('question'), $question);
+        $userAnswer = prompt(message('your_answer'));
         if ((string) $correctAnswer === $userAnswer) {
-            line($messages['correct']);
+            line(message('correct'));
         } else {
-            line("'{$userAnswer}' {$messages['wrong']} '{$correctAnswer}'.");
-            line($messages['try_again'], $playerName);
+            line(message('wrong'), $userAnswer, $correctAnswer);
+            line(message('try_again'), $playerName);
             exit;
         }
     }
-    line($messages['congrats'], $playerName);
+    line(message('congrats'), $playerName);
 }
