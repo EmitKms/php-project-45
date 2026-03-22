@@ -7,6 +7,7 @@ use function cli\prompt;
 use function BrainGames\Cli\run;
 use function Config\Messages\message;
 
+
 const QUESTIONS_COUNT = 3;
 
 function engineGameLaunch(callable $generateRound, string $gameDescription): void
@@ -14,7 +15,7 @@ function engineGameLaunch(callable $generateRound, string $gameDescription): voi
 
     $playerName = run('welcome');
 
-    line("{$gameDescription}");
+    line($gameDescription);
 
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
         [$question, $correctAnswer] = $generateRound();

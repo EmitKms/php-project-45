@@ -2,11 +2,11 @@
 
 <?php
 
+use function BrainGames\Games\Prime\runGameBrainPrime;
+
 $autoloadFromRoot = __DIR__ . '/../../../autoload.php';
 $autoloadFromVendor = __DIR__ . '/../vendor/autoload.php';
 
 require_once file_exists($autoloadFromRoot) ? $autoloadFromRoot : $autoloadFromVendor;
-
-use function BrainGames\Games\Prime\runGameBrainPrime;
 
 runGameBrainPrime();

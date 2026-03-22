@@ -1,8 +1,8 @@
 <?php
 
-namespace Config\Gamedescription;
+namespace Config\GameDescription;
 
-function gameDesc(string $key): string
+function gameDesription(string $key): string
 {
     $messages = [
         'brain-calc' => 'What is the result of the expression?',

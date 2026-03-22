@@ -3,7 +3,7 @@
 namespace BrainGames\Games\Progression;
 
 use function BrainGames\GameEngine\engineGameLaunch as start;
-use function Config\Gamedescription\gameDesc;
+use function Config\GameDescription\gameDesription;
 
 const MIN_START = 1;
 const MAX_START = 200;
@@ -19,7 +19,7 @@ function passProgressionResponse(): array
     $progression = [];
 
     $progression = createProgression($startOfProgression, $step);
-    $hiddenElementProgress = array_rand($progression);
+    $hiddenElementProgress = random_int(0, count($progression) - 1);
 
     $correctAnswer = $progression[$hiddenElementProgress];
     $progression[$hiddenElementProgress] = '..';
@@ -34,10 +34,12 @@ function createProgression(int $startOfProgression, int $step): array
     return range($startOfProgression, $startOfProgression + $step * ($maxProgressionLenght), $step);
 }
 
+function generateRound(): array
+{
+    return passProgressionResponse();
+}
+
 function runGameBrainProgression(): void
 {
-    $generateRound = function (): array {
-        return passProgressionResponse();
-    };
-    start($generateRound, gameDesc('brain-progression'));
+    start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-progression'));
 }
