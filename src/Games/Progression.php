@@ -19,7 +19,8 @@ function passProgressionResponse(): array
     $progression = [];
 
     $progression = createProgression($startOfProgression, $step);
-    $hiddenElementProgress = random_int(0, count($progression) - 1);
+
+    $hiddenElementProgress = (int) array_rand($progression);
 
     $correctAnswer = $progression[$hiddenElementProgress];
     $progression[$hiddenElementProgress] = '..';
