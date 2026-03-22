@@ -25,7 +25,7 @@ function generateRound(): array
     $question = "{$numberRandFirst} {$numberRandSecond}";
 
     return [$question, $correctAnswer];
-};
+}
 
 function runGameBrainGcd(): void
 {
