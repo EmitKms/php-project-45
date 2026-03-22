@@ -7,12 +7,10 @@ use function cli\prompt;
 use function BrainGames\Cli\run;
 use function Config\Messages\message;
 
-
 const QUESTIONS_COUNT = 3;
 
 function engineGameLaunch(callable $generateRound, string $gameDescription): void
 {
-
     $playerName = run('welcome');
 
     line($gameDescription);

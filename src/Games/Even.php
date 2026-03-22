@@ -15,14 +15,12 @@ function isEven(int $number): bool
 
 function generateRound(): array
 {
-
     $questionGame = random_int(MIN_RAND, MAX_RAND);
 
     $correctAnswer = isEven($questionGame) ? 'yes' : 'no';
 
     return [$questionGame, $correctAnswer];
 }
-
 
 function runGameBrainEven(): void
 {

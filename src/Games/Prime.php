@@ -33,6 +33,5 @@ function generateRound(): array
 
 function runGameBrainPrime(): void
 {
-
     start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-prime'));
 }
