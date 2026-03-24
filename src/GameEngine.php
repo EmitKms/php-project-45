@@ -16,7 +16,6 @@ function engineGameLaunch(callable $generateRound, string $gameDescription): voi
     line($gameDescription);
 
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
-
         [$question, $correctAnswer] = $generateRound();
 
         line(message('question'), $question);
