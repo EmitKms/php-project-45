@@ -16,13 +16,18 @@ function engineGameLaunch(callable $generateRound, string $gameDescription): voi
     line($gameDescription);
 
     for ($i = 0; $i < QUESTIONS_COUNT; $i++) {
+
         [$question, $correctAnswer] = $generateRound();
+
         line(message('question'), $question);
+
         $userAnswer = prompt(message('your_answer'));
+
         if ((string) $correctAnswer === $userAnswer) {
             line(message('correct'));
         } else {
             line(message('wrong'), $userAnswer, $correctAnswer);
+
             line(message('try_again'), $playerName);
             exit;
         }

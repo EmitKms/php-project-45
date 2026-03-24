@@ -15,7 +15,9 @@ const MAX_STEP = 8;
 function passProgressionResponse(): array
 {
     $step = random_int(MIN_STEP, MAX_STEP);
+
     $startOfProgression = random_int(MIN_START, MAX_START);
+
     $progression = [];
 
     $progression = createProgression($startOfProgression, $step);
@@ -23,16 +25,22 @@ function passProgressionResponse(): array
     $hiddenElementProgress = (int) array_rand($progression);
 
     $correctAnswer = $progression[$hiddenElementProgress];
+
     $progression[$hiddenElementProgress] = '..';
 
     $questionGame = implode(" ", $progression);
+
     return [$questionGame, $correctAnswer];
 }
 
 function createProgression(int $startOfProgression, int $step): array
 {
     $maxProgressionLenght = random_int(MIN_LENGTH, MAX_LENGTH) - 1;
-    return range($startOfProgression, $startOfProgression + $step * ($maxProgressionLenght), $step);
+    return range(
+        $startOfProgression,
+        $startOfProgression + $step * ($maxProgressionLenght),
+        $step
+    );
 }
 
 function generateRound(): array
@@ -42,5 +50,5 @@ function generateRound(): array
 
 function runGameBrainProgression(): void
 {
-    start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-progression'));
+    start(generateRound(...), gameDesription('brain-progression'));
 }

@@ -24,5 +24,5 @@ function generateRound(): array
 
 function runGameBrainEven(): void
 {
-    start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-even'));
+    start(generateRound(...), gameDesription('brain-even'));
 }

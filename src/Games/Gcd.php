@@ -22,6 +22,7 @@ function generateRound(): array
     $numberRandSecond = random_int(MIN_RAND, MAX_RAND);
 
     $correctAnswer = calculateDivisorGcd($numberRandFirst, $numberRandSecond);
+
     $question = "{$numberRandFirst} {$numberRandSecond}";
 
     return [$question, $correctAnswer];
@@ -29,5 +30,5 @@ function generateRound(): array
 
 function runGameBrainGcd(): void
 {
-    start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-gcd'));
+    start(generateRound(...), gameDesription('brain-gcd'));
 }

@@ -33,5 +33,5 @@ function generateRound(): array
 
 function runGameBrainCalc(): void
 {
-    start(__NAMESPACE__ . '\\generateRound', gameDesription('brain-calc'));
+    start(generateRound(...), gameDesription('brain-calc'));
 }
